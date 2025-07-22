@@ -8,6 +8,9 @@ export const routes: Routes = [
     {path:'Admin', component:AdminComponent},
     {path:'dashboard', component:DashboardComponent},
 
-    {path:'user', loadChildren: () =>
-      import('./user/user.module').then(m => m.UserModule)}
+    {path:'verification', loadChildren: () =>
+      import('./verification/verification.module').then(m => m.VerificationModule)},
+
+    {path:'authorization', loadChildren: () =>
+      import('./authorization/authorization.module').then(m => m.AuthorizationModule)}
 ];
