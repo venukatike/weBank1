@@ -19,7 +19,7 @@ export class AuthorizationComponent {
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       email: [''],
-      password: ['']
+      password: [''] 
     });
   }
 }
