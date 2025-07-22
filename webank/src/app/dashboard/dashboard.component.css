@@ -1,0 +1,21 @@
+ .img-fixed{
+    width: 100px;
+  height: 100px;
+  object-fit: cover;  /* fills the box, cropping if necessary */
+  border-radius: 8px; /* optional */
+ }
+ .box {
+  background-color: lightblue;
+  margin-bottom: 15px; /* space between divs vertically */
+  display: inline-flex;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* space between all boxes */
+  padding: 20px;
+}
